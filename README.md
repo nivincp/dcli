@@ -29,10 +29,18 @@ Examples:
   dcli my-table truncateModel users
 ```
 
+## Setup
+
+This CLI uses your local AWS credentials. Make sure you have a valid AWS profile configured.
+
+```
+export AWS_PROFILE=your-profile-name
+```
+
 ## Installation
 
 ```bash
-npm install -g dcli
+npm install -g @nivincp/dcli
 # or run directly without installing:
-npx dcli
+npx @nivincp/dcli
 ```
