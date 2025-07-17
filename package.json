@@ -1,5 +1,5 @@
 {
-  "name": "@nn/dcli",
+  "name": "@nivincp/dcli",
   "version": "1.0.0",
   "description": "Simple CLI to query, get, delete, or truncate DynamoDB records using PK/SK.",
   "bin": {
