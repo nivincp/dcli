@@ -1,0 +1,35 @@
+{
+  "name": "dcli",
+  "version": "1.0.0",
+  "description": "Simple CLI to query, get, delete, or truncate DynamoDB records using PK/SK.",
+  "bin": {
+    "dcli": "./dist/index.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "dynamodb",
+    "cli",
+    "aws",
+    "tooling"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.846.0",
+    "@aws-sdk/util-dynamodb": "^3.846.0"
+  }
+}
