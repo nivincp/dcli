@@ -1,6 +1,6 @@
 {
   "name": "@nivincp/dcli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple CLI to query, get, delete, or truncate DynamoDB records using PK/SK.",
   "bin": {
     "dcli": "./dist/index.js"
@@ -22,8 +22,16 @@
     "aws",
     "tooling"
   ],
-  "author": "Your Name",
+  "author": "Nivin",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nivincp/dcli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nivincp/dcli/issues"
+  },
+  "homepage": "https://github.com/nivincp/dcli#readme",
   "devDependencies": {
     "@types/node": "^24.0.14",
     "typescript": "^5.0.0"
