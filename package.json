@@ -1,6 +1,6 @@
 {
   "name": "@nivincp/dcli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple CLI to query, get, delete, or truncate DynamoDB records using PK/SK.",
   "bin": {
     "dcli": "./dist/index.js"
