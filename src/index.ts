@@ -78,7 +78,7 @@ function printUsage(): void {
 Usage: dcli <tableName> <mode> <pk> [sk]
 
   tableName   DynamoDB table name (e.g., my-table)
-  mode        One of: find, get, delete, truncateModel
+  mode        One of: find, get, delete, truncate
   pk          Partition key (e.g., "users")
   sk          Sort key (only required for get/delete)
 
@@ -86,7 +86,7 @@ Examples:
   dcli my-table find users
   dcli my-table get users user:01ABCD...
   dcli my-table delete users user:01XYZ...
-  dcli my-table truncateModel users
+  dcli my-table truncate users
 `);
 }
 
@@ -94,7 +94,7 @@ enum Mode {
   Find = "find",
   Get = "get",
   Delete = "delete",
-  Truncate = "truncateModel",
+  Truncate = "truncate",
 }
 
 (async () => {
@@ -126,7 +126,7 @@ enum Mode {
         const rows = await find(pk);
         for (const row of rows) {
           await deleteItem(row.pk, row.sk);
-          console.log(`🗑 Deleted ${row.sk}`);
+          console.log(`Deleted ${row.sk}`);
         }
         break;
       }

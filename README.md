@@ -18,7 +18,7 @@ You can use it to find, get, delete, or clear items from your tables. Useful for
 Usage: dcli <tableName> <mode> <pk> [sk]
 
   tableName   DynamoDB table name (e.g., my-table)
-  mode        One of: find, get, delete, truncateModel
+  mode        One of: find, get, delete, truncate
   pk          Partition key (e.g., "users")
   sk          Sort key (only required for get/delete)
 
@@ -26,7 +26,7 @@ Examples:
   dcli my-table find users
   dcli my-table get users user:01ABCD...
   dcli my-table delete users user:01XYZ...
-  dcli my-table truncateModel users
+  dcli my-table truncate users
 ```
 
 ## Setup
